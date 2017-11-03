@@ -1,12 +1,4 @@
-.navbar a img{
-    background-color:white; 
-    height: 50px;
-    width:50px;
-    /* border-radius: 30px; */
-}
-.navbar ul li a{
-    font-size:24pt;
-}
+
 /* Sticky footer styles
 -------------------------------------------------- */
 html {
@@ -28,3 +20,12 @@ html {
       height: 50px;
       width:50px;
   }
+  .navbar a img{
+    background-color:white; 
+    height: 50px;
+    width:50px;
+    /* border-radius: 30px; */
+}
+.navbar ul li a{
+    font-size:24pt;
+}

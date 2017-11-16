@@ -1,126 +1,128 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
-        crossorigin="anonymous">
-    <link rel="stylesheet" href="css/site.css" />
-    <link rel="icon" href="images/icons/GreekAlpha.ico"/>
-    <title>Airik | Java Developer</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Airik | Java Devloper</title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/site.css" />
 </head>
 <body>
-
-    <nav class="navbar navbar-dark bg-primary">
-        <a class="navbar-brand" href="index.html">
-            <img class="rounded-circle" src="images/icons/GreekAlpha.ico" />
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-            aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+  <nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#">Airik | Developer</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link active" href="index.html">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="about.html">about</a>
+        <a class="nav-item nav-link" href="http://airikleon.io:8080/Blog/splash.do">blog</a>
+        <a class="nav-item nav-link"
+        href="portfolio.html">portfolio</a>
+        <a class="nav-item nav-link disabled" href="contact.html">contact</a>
+      </div>
+    </div>
+  </nav>
+  <div class="jumbotron jumbotron-fluid">
+    <video width="100%" height="100%" autoplay loop muted>
+      <source src="images/background-header video.mp4" type="video/mp4">
+    </video>
+    <div class="container col-sm-12">
+      <h1 class="display-3">Hello Internet</h1>
+    </div>
+  </div>
+  <div class="container-fluid justify-content-center">
+    <h3 class="row justify-content-center text-muted">
+      Recent Projects
+    </h3>
+    <div class="row justify-content-center">
+      <div class="testBox">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" style="width:100%; height:100%;font-size:18pt">
+        Presidents search app
+      </button>
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Presidents search app</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="index.html">home
-                        <span class="sr-only">(current)</span>
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">about</a>
-                </li>
-                <li>
-                    <a href=""></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="http://airikleon.io:8080/Blog/splash.do">blog</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html"> contact</a>
-                </li>
-            </ul>
+              </div>
+              <div class="modal-body">
+                <img src="images/PresidentAppOverview.png" width="100%" height="100%" />
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a type="button" class="btn btn-primary" href="http://airikleon.io:8080/USPresidentsWeb/">Go to app</a>
+              </div>
+            </div>
+          </div>
         </div>
-    </nav>
+      </div>
 
-    <div class="jumbotron jumbotron-fluid">
-        <div class="container">
-            <h1 class="display-3">Fluid jumbotron</h1>
-            <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.</p>
+      <div class="testBox">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#blogModal" style="width:100%; height:100%;font-size:18pt;">
+        Blog
+      </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="blogModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Blog</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+              </div>
+              <div class="modal-body">
+                <img src="images/BlogOverview.png" width="100%" height="100%" /></div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a type="button" class="btn btn-primary" href="http://airikleon.io:8080/Blog/">Go to app</a>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="testBox">
+
+      </div>
+      <div class="testBox">
+
+      </div>
     </div>
-    <h1 class="row justify-content-center text-muted">Latest work</h1>
-    
+  </div>
+
+  <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-sm">
-                <div class="card" style="width: 20rem;">
-                    <img class="card-img-top" src="images/PresidentAppOverview.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h4 class="card-title">U.S. Presidents Gallery</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="http://airikleon.io:8080/USPresidentsWeb/" class="btn btn-primary">GO!</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 20rem;">
-                    <img class="card-img-top" src="images/BlogOverview.png" alt="Card image cap">
-                    <div class="card-body">
-                        <h4 class="card-title">Blog</h4>
-                        <p class="card-text">A blog I created for all of the work I have done and topics I felt interested in enought to write about (work in progress)</p>
-                        <a href="http://airikleon.io:8080/Blog/" class="btn btn-primary">Blog</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm">
-                <div class="card" style="width: 20rem;">
-                    <img class="card-img-top" src="..." alt="Card image cap">
-                    <div class="card-body">
-                        <h4 class="card-title">Card title</h4>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                        <a href="http://airikleon.io:8080/Calculator/" class="btn btn-primary">Calculator</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+      <ul class="nav">
+        <li class="nav-item">
+          <a class="nav-link active text-muted" href="#">&copy Airik Leon 2017</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">GitHub</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">LinkedIn</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="tel:816-805-0627">Phone</a>
+        </li>
+      </ul>
     </div>
-    <footer class="footer">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm">
-                        <span class="text-muted"> &copy 2017 Airik Leon</span>
-                    </div>
-                    <div class="col-sm">
-                        <div class="container">
-                            <a href="https://www.linkedin.com/in/airik-leon-b0730a93/">
-                                <img src="images/socialMedia/in.png" />
-                            </a>
-                            <a href="https://github.com/Airik-Leon">
-                                <img src="images/socialMedia/github.png" />
-                            </a>
-                            <a href="https://www.facebook.com/airik.leon">
-                                <img src="images/socialMedia/fb.png" />
-                            </a>
-                            <a href="tel:8168050627">
-                                <img src="images/socialMedia/phone.png"/>
-                            </a>
-                        </span>
-                    </div>
-                    <div class="col-sm">
-
-                </div>
-            </div>
-    </footer>
+  </footer>
 </body>
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-    crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh"
-    crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ"
-    crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
 
 </html>

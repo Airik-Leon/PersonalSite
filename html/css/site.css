@@ -1,31 +1,58 @@
-
-/* Sticky footer styles
--------------------------------------------------- */
-html {
-    position: relative;
-    min-height: 100%;
-  }
-  body {
-    margin-bottom: 60px; /* Margin bottom by footer height */
-  }
-  .footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: auto; /* Set the fixed height of the footer here */
-    line-height: 60px; /* Vertically center the text there */
-    background-color: #f5f5f5;
-  }
-  footer img{
-      height: 50px;
-      width:50px;
-  }
-  .navbar a img{
-    background-color:white; 
-    height: 50px;
-    width:50px;
-    /* border-radius: 30px; */
+.navbar{
+  background-color: #232F3E;
 }
-.navbar ul li a{
-    font-size:24pt;
+.navbar a{
+  color:#999999;
+  font-size:18pt;
+}
+.nav-link{
+  color:#999999;
+}
+.nav-link:hover{
+  color:#FF9900;
+}
+.navbar a:hover{
+  color:#FF9900;
+  font-size: 24pt;
+}
+video{
+  margin-top: -70px;
+}
+button{
+  background-color:silver;
+}
+button:hover{
+  color:#FF9900;
+}
+.lead{
+  color:white;
+}
+.testBox{
+  width:300px;
+  height:200px;
+  background-color:black;
+  margin: 5px;
+  border-radius: 5px;
+}
+
+h1{
+  margin-top:-170px;
+  color:white;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 100px;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: auto;
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #232F3E;
 }

@@ -22,7 +22,6 @@
   font-size: 24pt;
 }
 video{
-  margin-top: -70px;
 }
 button{
   background-color:silver;
@@ -39,8 +38,11 @@ button:hover{
   background-color:black;
   margin: 5px;
   border-radius: 5px;
+  box-shadow: 2px 2px 2px 2px silver;
 }
-
+.jumbotron{
+  background-color:#14242F;
+}
 h1{
   margin-top:-170px;
   color:white;

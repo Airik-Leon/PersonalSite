@@ -13,7 +13,7 @@
 </head>
 
 <body onload="setInterval()">
-  <nav class="navbar navbar-expand-lg fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
     <a class="navbar-brand" href="index.html"><img width="50px" height="25px"  src="images/O_Java-SE-8-OCA-clr.gif"/>Airik | Developer</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
         <a class="nav-item nav-link" href="about.html">about</a>
         <a class="nav-item nav-link" href="http://airikleon.io:8080/Blog/splash.do">blog</a>
         <a class="nav-item nav-link" href="portfolio.html">portfolio</a>
-        <a class="nav-item nav-link disabled" href="contact.html">contact</a>
+        <a class="nav-item nav-link" href="contact.html">contact</a>
       </div>
     </div>
   </nav>
@@ -98,7 +98,31 @@
         </div>
       </div>
       <div class="testBox">
+        <!-- Button trigger modal -->
+        <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#chModal" style="width:100%; height:100%;font-size:18pt;">
+        Cloud harbor <br>
+        (Market place)
+        </button>
 
+        <!-- Modal -->
+        <div class="modal fade" id="chModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Blog</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+              </div>
+              <div class="modal-body">
+                <img src="images/CloudHarbor.png" width="100%" height="100%" /></div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <a type="button" class="btn btn-primary" href="http://airikleon.io:8080/CloudHarbor/">Go to app</a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
       <div class="testBox">
 

@@ -1,0 +1,111 @@
+<div class="container justify-content-center mt-2" ng-show="!vm.user">
+    <div>
+        <select ng-model="userId">
+            <option ng-repeat="u in vm.users" value="{{u.id}}">{{u.email}}</option>
+        </select>
+        <button class="btn btn-success" ng-click="vm.logIn(userId)">log in</button>
+    </div>
+</div>
+
+<div class="container align-right mt-2"ng-show="vm.user">
+    <button class="btn btn-danger" ng-click="vm.logOut()">Log Out</button>
+        <div ng-show="!vm.detail && !vm.selectedAccount">
+                <div id="form-add">
+                        <input type="text" ng-model="account.name"/>
+                        <select ng-model="account.accountType.type">
+                            <option ng-repeat="t in vm.accountTypes" value="{{t.type}}">{{t.type}}</option>
+                        </select>
+                        <input class="btn btn-primary"type="button" value="Add Account" ng-click="vm.create(account); account = {};">
+                </div>
+                <div class="row justify-content-center mt-3">
+                    <h6>Welcome {{vm.user.firstName}}!</h6>
+                </div>
+                <table class="table table-striped mt-2">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Accounts</th>
+                            <th>Account Type</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="a in vm.accounts">
+                            <td>{{a.id}}</td>
+                            <td ng-click="vm.show(a)">{{a.name}}</td>
+                            <td>{{a.accountType.type}}</td>
+                            <td><button class="btn btn-secondary"ng-click="vm.setSelectedAccount(a)">Update</button></td>
+                            <td><button class="btn btn-danger" ng-click="vm.destroy(a)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div ng-show="vm.detail && !vm.selectedTransaction">
+                    <div>
+                            <label>Company Name:</label>
+                            <input type="text" ng-model="transaction.companyName" /><br>
+                            <label>Company Address:</label>
+                            <input type="text" ng-model="transaction.companyAddress"/><br/>
+                            <label>Price: </label>
+                            <input type="text" ng-model="transaction.price"/><br/>
+                            <label>Transaction Type</label>
+                            <select ng-model="transaction.type.type">
+                                <option ng-repeat="t in vm.transactionTypes" value="{{t.type}}"> {{t.type}}</option>
+                            </select><br/>
+                            <button class="btn btn-primary"ng-click="vm.createTransaction(transaction, vm.detail)">Add Transaction</button><br>
+                    </div>
+                <table class="table table-striped mt-2">
+                        <caption><strong>{{vm.detail.name}}</strong></caption>
+                        <caption><hr>Total Spent: {{vm.totalCost}}</caption>
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Price</th>
+                            <th>Company Name</th>
+                            <th> Type</th>
+                            <th>Date</th>
+                            <th>Company Address</th>
+                            <th>Update</th>
+                            <th>Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="t in vm.transactions">
+                            <td>{{t.id}}</td>
+                            <td>{{t.price}}</td>
+                            <td ng-click="vm.showTransaction(t)"> {{t.companyName}}</td>
+                            <td>{{t.type.type}}</td>
+                            <td>{{t.date}}</td>
+                            <td>{{t.companyAddress}}</td>
+                            <td><button class="btn" ng-click="vm.setSelectedTransaction(t)">Update</button></td>
+                            <td><button class="btn btn-danger" ng-click="t.account = vm.detail;vm.destoryTransaction(t)">Delete</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button class="btn" ng-click="vm.returnAccounts()">Go back</button>
+            </div>
+            
+            <div ng-show="vm.selectedAccount">
+                <label>Account name: </label><input type="text" ng-model="vm.selectedAccount.name"
+                /><br>
+                <button class="btn"ng-click="vm.clearSelected()">Go Back</button>
+                <button class="btn btn-warning"ng-click="vm.update(vm.selectedAccount)">Save</button>
+            </div>
+            <div ng-show="vm.selectedTransaction">
+                    <label>Company Name: </label>
+                    <input type="text" ng-model="vm.selectedTransaction.companyName"><br>
+                    <label>Price: </label>
+                    <input type="text" ng-model="vm.selectedTransaction.price"><br>
+                    <label>Transaction Type: </label>
+                    <select ng-model="vm.selectedTransaction.type.type">
+                        <option ng-repeat="t in vm.transactionTypes">{{t.type}}</option>
+                    </select><br>
+                    <label>Company Address: </label>
+                    <input type="text" ng-model="vm.selectedTransaction.companyAddress"/><br>
+                    <button class="btn"ng-click="vm.clearTransaction()">Go Back</button>
+                    <button class="btn btn-warning"ng-click="vm.updateTransaction(vm.selectedTransaction)">Save</button>
+            </div>
+
+</div>
